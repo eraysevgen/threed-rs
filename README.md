@@ -1,6 +1,6 @@
 # ThreeD-Rust -- 3D point cloud feature extraction in Rust
 
-A Rust native version of [threed](https://github.com/threed.git).
+A Rust native version of [threed](https://github.com/eraysevgen/threed).
 
 ## Folder structure
 
@@ -22,3 +22,12 @@ threed-rs
 +---examples
 \---tests
 ```
+## Roadmap
+- [ ] core
+- [ ] io
+- [ ] search
+- [ ] features
+- [ ] cli
+- [ ] ci workflows
+
+
