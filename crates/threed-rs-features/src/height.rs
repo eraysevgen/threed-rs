@@ -103,4 +103,3 @@ mod tests {
         assert_eq!(hf.variance, 9.0);
     }
 }
-
