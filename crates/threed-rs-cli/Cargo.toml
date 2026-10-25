@@ -1,0 +1,22 @@
+[package]
+name = "threed-rs-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "threed-rs"
+path = "src/main.rs"
+
+[dependencies]
+threed-rs-core = { workspace = true }
+threed-rs-search = { workspace = true }
+threed-rs-features = { workspace = true }
+threed-rs-io = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_yaml = { workspace = true }
+indicatif = { workspace = true }
+anyhow = { workspace = true }
+

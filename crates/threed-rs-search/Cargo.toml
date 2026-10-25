@@ -1,0 +1,13 @@
+[package]
+name = "threed-rs-search"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+threed-rs-core = { workspace = true }
+kiddo = { workspace = true }
+rayon = { workspace = true }
+thiserror = { workspace = true }
+

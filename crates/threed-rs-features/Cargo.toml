@@ -1,0 +1,15 @@
+[package]
+name = "threed-rs-features"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+threed-rs-core = { workspace = true }
+threed-rs-search = { workspace = true }
+nalgebra = { workspace = true }
+rayon = { workspace = true }
+indicatif = { workspace = true }
+thiserror = { workspace = true }
+

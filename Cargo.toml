@@ -1,6 +1,48 @@
-[package]
-name = "threed-rs"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "2"
+members = [
+    "crates/threed-rs-core",
+    "crates/threed-rs-search",
+    "crates/threed-rs-features",
+    "crates/threed-rs-io",
+    "crates/threed-rs-cli",
+]
 
-[dependencies]
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Eray Sevgen"]
+license = "MIT"
+repository = "https://github.com/eraysevgen/threed-rs"
+
+[workspace.dependencies]
+# Math & Linear Algebra (PCA / Covariance / Eigenvalues)
+nalgebra = "0.33"
+
+# Spatial Indexing & Neighborhood Search (KNN / Radius)
+kiddo = "6.3"
+
+# Parallel Processing
+rayon = "1.10"
+
+# Point Cloud Formats & File I/O
+las = { version = "0.11", features = ["laz", "laz-parallel"] }
+ply-rs = "0.1"
+ndarray = "0.16"
+ndarray-npy = "0.9"
+
+# CLI & Configuration
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+indicatif = "0.17"
+
+# Error Handling & Utilities
+thiserror = "2.0"
+anyhow = "1.0"
+
+# Workspace Internal Dependencies
+threed-rs-core = { path = "crates/threed-rs-core" }
+threed-rs-search = { path = "crates/threed-rs-search" }
+threed-rs-features = { path = "crates/threed-rs-features" }
+threed-rs-io = { path = "crates/threed-rs-io" }

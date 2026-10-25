@@ -1,0 +1,15 @@
+[package]
+name = "threed-rs-io"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+threed-rs-core = { workspace = true }
+las = { workspace = true }
+ply-rs = { workspace = true }
+ndarray = { workspace = true }
+ndarray-npy = { workspace = true }
+thiserror = { workspace = true }
+
