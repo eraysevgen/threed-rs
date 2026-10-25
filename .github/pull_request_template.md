@@ -18,3 +18,4 @@ Fixes #(issue number) or Relates to #(issue number)
 - [ ] I have added tests that prove my fix is effective or that my feature works (`cargo test --all`).
 - [ ] All new and existing tests pass locally.
 - [ ] I have updated the documentation / README accordingly (if applicable).
+

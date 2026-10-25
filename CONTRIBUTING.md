@@ -81,3 +81,4 @@ cargo clippy --all-targets --all-features -- -D warnings
 
 ## 📄 License
 By contributing to `threed-rs`, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
+

@@ -17,3 +17,4 @@ If you believe you have discovered a security vulnerability in `threed-rs`, plea
 2. Provide detailed steps to reproduce the issue, including example point cloud files or configurations if applicable.
 
 We will acknowledge receipt of your report within 48 hours and work with you to remediate the vulnerability and issue a security release promptly.
+
