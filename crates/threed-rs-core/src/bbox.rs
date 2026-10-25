@@ -129,4 +129,3 @@ mod tests {
         assert_eq!(BoundingBox::from_points(&[]), None);
     }
 }
-
