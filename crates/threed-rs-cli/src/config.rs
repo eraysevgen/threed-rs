@@ -220,4 +220,3 @@ mod tests {
         assert!(parsed.features.add_density);
     }
 }
-

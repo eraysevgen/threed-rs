@@ -1,0 +1,47 @@
+# ThreeD-Rust (threed-rs) Configuration File
+# Compatible with original C++ threed configuration format.
+
+files:
+  # Path to the base point cloud file (.las, .laz, .ply) used to build KD-Tree
+  host_file: "data/host_data.las"
+
+  # Path to the query point cloud file (.las, .laz, .ply)
+  # If omitted or null, query_file defaults to host_file
+  query_file: null
+
+  # Path to output NumPy (.npy) feature matrix file
+  out_file: "data/output.npy"
+
+neighborhood:
+  # Neighborhood search method: 'radius' or 'knn'
+  name: "radius"
+
+  # Spatial query engine: 'cpu' (Kiddo v6)
+  engine: "cpu"
+
+  # Search radius distance (used if method is 'radius')
+  radius: 0.25
+
+  # Maximum number of neighbors returned (used in 'radius' search)
+  max_k: 512
+
+  # Number of nearest neighbors (used if method is 'knn')
+  k: 8
+
+  # Batch query processing size
+  batch_size: 65536
+
+features:
+  # Add 5 vertical height features: z_range, z_mean, z_std, z_variance, z_skewness
+  add_height: false
+
+  # Add 1 density feature (number of neighbors in radius or radius in knn)
+  add_density: true
+
+  # Append raw (X, Y, Z) point coordinates to the end of the feature matrix
+  add_xyz: false
+
+params:
+  # Number of Rayon worker threads (0 = auto-detect all available CPU cores)
+  num_threads: 0
+

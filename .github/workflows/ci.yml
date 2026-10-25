@@ -11,8 +11,12 @@ env:
 
 jobs:
   check-and-test:
-    name: Build, Lint, and Test
-    runs-on: ubuntu-latest
+    name: Build, Lint, and Test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
 
     steps:
       - name: Checkout code
@@ -23,7 +27,7 @@ jobs:
         with:
           toolchain: stable
           components: rustfmt, clippy
-        
+
       - name: Check formatting
         run: cargo fmt --all -- --check
 
