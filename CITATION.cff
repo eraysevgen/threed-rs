@@ -1,9 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this software in your research, please cite it as below."
+message: "If you use this software in your research, please cite both the software and the associated publications below."
 authors:
   - family-names: "Sevgen"
     given-names: "Eray"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
 title: "threed-rs: High-performance 3D Point Cloud Local Feature Extraction in Rust"
 version: 0.1.0
 date-released: 2026-10-26
@@ -16,3 +15,31 @@ keywords:
   - "photogrammetry"
   - "spatial-indexing"
   - "rust"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Sevgen"
+      given-names: "Eray"
+    - family-names: "Abdikan"
+      given-names: "Saygin"
+  title: "Classification of Large-Scale Mobile Laser Scanning Data in Urban Area with LightGBM"
+  journal: "Remote Sensing"
+  volume: 15
+  issue: 15
+  year: 2023
+  doi: "10.3390/rs15153787"
+  url: "https://www.mdpi.com/2072-4292/15/15/3787"
+references:
+  - type: article
+    authors:
+      - family-names: "Sevgen"
+        given-names: "E."
+      - family-names: "Abdikan"
+        given-names: "S."
+    title: "POINT-WISE CLASSIFICATION OF HIGH-DENSITY UAV-LIDAR DATA USING GRADIENT BOOSTING MACHINES"
+    journal: "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    volume: "XLVIII-M-1-2023"
+    pages: "587-593"
+    year: 2023
+    doi: "10.5194/isprs-archives-XLVIII-M-1-2023-587-2023"
+    url: "https://isprs-archives.copernicus.org/articles/XLVIII-M-1-2023/587/2023/"

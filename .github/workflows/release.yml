@@ -25,6 +25,14 @@ jobs:
             target: x86_64-pc-windows-msvc
             binary_name: threed-rs.exe
             asset_name: threed-rs-windows-x86_64.zip
+          - os: macos-latest
+            target: aarch64-apple-darwin
+            binary_name: threed-rs
+            asset_name: threed-rs-macos-arm64.tar.gz
+          - os: macos-13
+            target: x86_64-apple-darwin
+            binary_name: threed-rs
+            asset_name: threed-rs-macos-x86_64.tar.gz
 
     steps:
       - name: Checkout code
@@ -39,8 +47,8 @@ jobs:
       - name: Build Release Binary
         run: cargo build --release --target ${{ matrix.target }} -p threed-rs-cli
 
-      - name: Package Binary (Linux)
-        if: matrix.os == 'ubuntu-latest'
+      - name: Package Binary (Linux / macOS)
+        if: matrix.os == 'ubuntu-latest' || startsWith(matrix.os, 'macos')
         run: |
           cd target/${{ matrix.target }}/release
           tar -czf ../../../${{ matrix.asset_name }} ${{ matrix.binary_name }}
@@ -75,4 +83,6 @@ jobs:
           files: |
             threed-rs-linux-x86_64.tar.gz/threed-rs-linux-x86_64.tar.gz
             threed-rs-windows-x86_64.zip/threed-rs-windows-x86_64.zip
+            threed-rs-macos-arm64.tar.gz/threed-rs-macos-arm64.tar.gz
+            threed-rs-macos-x86_64.tar.gz/threed-rs-macos-x86_64.tar.gz
           generate_release_notes: true
