@@ -19,4 +19,4 @@ serde = { workspace = true }
 serde_yaml = { workspace = true }
 indicatif = { workspace = true }
 anyhow = { workspace = true }
-
+rayon = { workspace = true }

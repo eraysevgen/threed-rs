@@ -1239,6 +1239,7 @@ dependencies = [
  "anyhow",
  "clap",
  "indicatif",
+ "rayon",
  "serde",
  "serde_yaml",
  "threed-rs-core",
