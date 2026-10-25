@@ -84,4 +84,3 @@ fn test_end_to_end_pipeline() {
     let _ = std::fs::remove_file(test_ply_path);
     let _ = std::fs::remove_file(test_npy_path);
 }
-

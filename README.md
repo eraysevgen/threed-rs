@@ -194,6 +194,12 @@ cargo fmt --all -- --check
 
 ---
 
+## 🤖 Acknowledgments
+
+This project was architected, engineered, and migrated from C++ to Rust with the assistance of **Google DeepMind Antigravity**.
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
@@ -318,6 +324,12 @@ cargo fmt --all -- --check
 - [x] `threed-rs-io`: LAS/LAZ, PLY, and NumPy `.npy` export
 - [x] `threed-rs-cli`: Interactive CLI, YAML config parsing, progress tracking, and orchestration
 - [x] Multi-platform CI workflows (Ubuntu & Windows)
+
+---
+
+## 🤖 Acknowledgments
+
+This project was architected, engineered, and migrated from C++ to Rust with the assistance of **Google DeepMind Antigravity**.
 
 ---
 

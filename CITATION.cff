@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+  - family-names: "Sevgen"
+    given-names: "Eray"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "threed-rs: High-performance 3D Point Cloud Local Feature Extraction in Rust"
+version: 0.1.0
+date-released: 2026-10-26
+url: "https://github.com/eraysevgen/threed-rs"
+license: MIT
+keywords:
+  - "point-cloud"
+  - "feature-extraction"
+  - "lidar"
+  - "photogrammetry"
+  - "spatial-indexing"
+  - "rust"
